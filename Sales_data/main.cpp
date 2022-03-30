@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 int main()
 {
     /*
@@ -32,7 +33,7 @@ int main()
        { cerr << "No data?!" << endl;}//没有输入，通知用户
 }
 */
-
+#if 1
     Screen myScreen(5, 5, 'X');
     myScreen.display(cout);
     cout << "\n";
@@ -43,6 +44,14 @@ int main()
     cout << ch << endl;
     myScreen.display(cout);
     cout << "\n";
-
+#else 
+    Screen::pos ht = 24, wd =80; //使用Screen定义的pos类型
+    Screen Sce(ht,wd,'*');
+    Screen *p = &Sce;
+    char c = Sce.get(); //访问Sce对象的get成员
+    cout << c << endl; 
+    c = p->get(); //访问p所指对象的get成员
+    cout << c << endl;
+#endif
     return 0;
 }
