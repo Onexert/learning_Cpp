@@ -1,0 +1,3 @@
+/home/archlinux/learning/c++/build-QtProject-unknown-Debug/CMakeFiles/QtProject.dir
+/home/archlinux/learning/c++/build-QtProject-unknown-Debug/CMakeFiles/edit_cache.dir
+/home/archlinux/learning/c++/build-QtProject-unknown-Debug/CMakeFiles/rebuild_cache.dir

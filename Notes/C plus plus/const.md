@@ -1,3 +1,5 @@
+# [const 那些事](https://github.com/Light-City/CPlusPlusThings/blob/master/basic_content/const) 
+
 ## 1. const 的含义
 
     常类型是指使用类型修饰符const说明的类型，常类型的变量或对象的值是不能被更新的
@@ -31,13 +33,12 @@ void f(const int i){
   - const定义常量从汇编的角度来看，只是给出了对应的内存地址，而不是像`#define`一样给出的是立即数。
   - const定义的常量在程序运行过程中只有一份拷贝，而`#define`定义的常量在内存中有若干个拷贝。
 
-## 
 
 ## 3.const对象默认为文件局部变量
 
 注意：非const变量默认为extern。要使const变量能够在其他文件中访问，必须在文件中显式地指定它为extern。
 
-> *被const修饰的变量在不同文件的访问*
+-  **被const修饰的变量在不同文件的访问**
 
 ```c++
 // file1.cpp
@@ -51,7 +52,7 @@ int main(){
 }
 ```
 
-> const常量在不同文件的访问
+- **const常量在不同文件的访问**
 
 ```c++
 //extern_file1.cpp
@@ -67,11 +68,10 @@ int main(){
 > 小结：
 > 可以发现未被const修饰的变量不需要extern显式声明！而const常量需要显式声明extern，并且需要做初始化！因为常量在定义后就不能被修改，所以定义时必须初始化。
 
-## 
 
 ## 4.定义常量
 
-```
+```cpp
 const int b = 10;
 b = 0; // error: assignment of read-only variable ‘b’
 const string s = "helloworld";
@@ -81,9 +81,8 @@ const int i,j=0 // error: uninitialized const ‘i’
 上述有两个错误：
 
 - b 为常量，不可更改！
-- i 为常量，必须进行初始化！(因为常量在定义后就不能被修改，所以定义时必须初始化。)
+- i 为常量，必须进行初始化！(因为**常量在定义后就不能被修改，所以定义时必须初始化**。)
 
-## 
 
 ## 5.指针与const
 
@@ -133,7 +132,7 @@ ptr = &val; //ok
 
 我们不能使用指向const对象的指针修改基础对象，然而如果该指针指向了非const对象，可用其他方式修改其所指的对象。可以修改const指针所指向的值的，但是不能通过const对象指针来进行而已！如下修改：
 
-```
+```cpp
 int *ptr1 = &val;
 *ptr1=4;
 cout<<*ptr<<endl;
@@ -188,7 +187,6 @@ const int * const ptr = &p;
 
 ptr是一个const指针，然后指向了一个int 类型的const对象。
 
-## 
 
 ## 6.函数中使用const
 
@@ -269,7 +267,6 @@ void func(const A &a)
 - 如果函数需要传入一个指针，是否需要为该指针加上const，把const加在指针不同的位置有什么区别；
 - 如果写的函数需要传入的参数是一个复杂类型的实例，传入值参数或者引用参数有什么区别，什么时候需要为传入的引用参数加上const。
 
-## 
 
 ## 7.类中使用const
 
@@ -408,3 +405,5 @@ int Apple::ap=666c
 ```
 
 对于此项，c++11不能进行声明并初始化，也就是上述使用方法。
+
+#cpp #const #常量

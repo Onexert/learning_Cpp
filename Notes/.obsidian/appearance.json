@@ -1,0 +1,10 @@
+{
+  "baseFontSize": 16,
+  "theme": "obsidian",
+  "cssTheme": "Blue Topaz",
+  "baseFontSizeAction": true,
+  "translucency": false,
+  "interfaceFontFamily": "Pingfang SC",
+  "textFontFamily": "Pingfang SC",
+  "monospaceFontFamily": "Consolas,Pingfang SC"
+}

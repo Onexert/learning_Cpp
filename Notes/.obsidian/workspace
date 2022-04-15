@@ -1,0 +1,117 @@
+{
+  "main": {
+    "id": "23abdd87ec4047d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "c56cd31eac82c527",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "32199848fbb92f71",
+    "type": "split",
+    "children": [
+      {
+        "id": "642526254081a3ca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1b74277f7f6d4a5f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "80a0c0fcddf1805a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 189
+  },
+  "right": {
+    "id": "1b53f6df2762951f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d0ccefb9f148bd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae28394845c82cd8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "c56ca1cf0708cc33",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "551389429cb1e5d7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 215
+  },
+  "active": "c56cd31eac82c527",
+  "lastOpenFiles": [
+    "C plus plus/面向对象编程.md",
+    "C plus plus/Delegation (委托).md",
+    "C plus plus/虚函数与多态.md",
+    "C plus plus/Composition (组合).md",
+    "Excalidraw/Drawing 2022-04-10 21.44.43.excalidraw.md",
+    "C plus plus/static.md",
+    "image/Pasted image 20220413194903.png",
+    "C plus plus/Inheritance (继承).md",
+    "image/Pasted image 20220412215107.png",
+    "C plus plus/目录.md"
+  ]
+}

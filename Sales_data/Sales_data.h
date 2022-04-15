@@ -36,14 +36,18 @@ private:
     double revenue = 0.0;
 
 public:
-    Sales_data() = default;
-    Sales_data(const std::string s = "") : bookNo(s) {} //
+    // Sales_data() = default;
+    //定义默认构造函数，令其与只接受一个string 实参的构造函数功能相同
+    Sales_data(const std::string s = "") : bookNo(s) {}
     Sales_data(const std::string &s, unsigned n, double p)
-        : bookNo(s), units_sold(n), revenue(p * n)
-    {
-    }
+        : bookNo(s), units_sold(n), revenue(p * n) {}
     Sales_data(std::istream &is) { read(is, *this); }
 
+    /* 委托构造函数
+        Sales_data():Sales_data("",0,0) {}
+        Sales_data(std::string s):Sales_data(s,0,0){}
+        Sales_data(std::istream &is):Sales_data(){read(is, *this); }
+    */
     std::string isbn() const { return bookNo; } /* 返回对象的ISBN */
     Sales_data &combine(const Sales_data &);    // 用于将一个Sales_data对象加到另一个对象上
 };
